@@ -1,6 +1,14 @@
 #!/bin/bash
+echo "Updating the system before installing anything..."
 sudo dnf update -y
+
+echo "Installing pacakges..."
 sudo dnf install thunderbird wget rstudio okular zsh gnome-tweaks gnome-shell-extension-dash-to-dock gnome-extensions-app -y
+
+# Install packages required for R development
+echo  "Installing development package for R..."
+sudo dnf install r-devel -y
+
 # Install RPMFusion
 echo "Installing multimedia libraries......"
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
