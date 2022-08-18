@@ -15,3 +15,9 @@ RPMFusion non-free, required to install NVIDIA drivers and other non-free softwa
 ### Flathub
 
 Flathub allows for installation of software not found in the regular DNF repositories.
+
+# Script versions
+|Branch|Fedora Release|
+|-------|--------|
+|release/fedora-35|35|
+|master (active development)|36|
