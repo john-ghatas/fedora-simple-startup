@@ -26,6 +26,5 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 
 # Init flatpak
 echo "Enabling non-free Flatpak repository for extra software compatiblity......"
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak override --user --filesystem=~/.themes
-flatpak override --user --filesystem=$HOME
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak override --user --filesystem=~/.themes --filesystem=~/.config/gtk-4.0
