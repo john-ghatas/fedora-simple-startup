@@ -20,4 +20,5 @@ Flathub allows for installation of software not found in the regular DNF reposit
 |Branch|Fedora Release|
 |-------|--------|
 |release/fedora-35|35|
-|master (active development)|36|
+|release/fedora-36|36|
+|master (active development)|37|
