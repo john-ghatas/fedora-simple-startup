@@ -8,7 +8,7 @@ With the nature of fedora Silverblue/Kinoite multiple scripts are needed with mu
     - `sudo rpm-ostree override remove mesa-vdpau-drivers --install mesa-vdpau-drivers-freeworld`
     - In case of an Intel system run the following command and then reboot
     - `sudo rpm-ostree install intel-media-driver`
-- Reboot again
+- Reboot again -> You can choose to install the NVIDIA drivers on the current cycle, please note in case of any issues this will be harder to isolate
 - **Only run this step if you have an NVIDIA gpu**
     - `./nvidia-setup.sh`
     - If the NVIDIA gpu is your primary display output (in case of a desktop etc.) run the following command
