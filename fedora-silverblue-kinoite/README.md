@@ -15,7 +15,7 @@ With the nature of fedora Silverblue/Kinoite multiple scripts are needed with mu
     - `sudo rpm-ostree install nvidia-vaapi-backend`
     - Reboot again
 
-You are done, I provided an upgrade script as well in case you need to upgrade Silverblue (the same script can be used for Kinoite run `./upgrade-kinoite.sh`)
+You are done, I provided an upgrade script as well in case you need to upgrade Kinoite/Silverblue
 
 
 The `upgrade.sh` script is provided in case of a new major version, run the script by issueing the following command `./upgrade.sh`. The output will look like this:
@@ -25,7 +25,3 @@ What version of Fedora are you upgrading to? (37, 38 etc): 38
 Upgrading to Fedora 38 from Fedora 37
 Press any key to continue....  
 ```
-
-There are 2 upgrade scripts that correspond with each Fedora spin, run the correct one:
-- `upgrade.sh` Fedora Silverblue
-- `upgrade-kinoite.sh` Fedora Kinoite
