@@ -25,3 +25,5 @@ What version of Fedora are you upgrading to? (37, 38 etc): 38
 Upgrading to Fedora 38 from Fedora 37
 Press any key to continue....  
 ```
+
+If you encounter issues with the regular upgrade script try using the `./upgrade-alternate.sh` script.
