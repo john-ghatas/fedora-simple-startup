@@ -9,6 +9,13 @@ With the nature of fedora Silverblue/Kinoite multiple scripts are needed with mu
     - In case of an Intel system run the following command and then reboot
     - `rpm-ostree install intel-media-driver`
 - Reboot again -> You can choose to install the NVIDIA drivers on the current cycle, please note in case of any issues this will be harder to isolate
+    - If you want docker to work you need to run these commands to add the right permissions
+```
+sudo su -
+grep -E '^docker:' /usr/lib/group >> /etc/group
+usermod -aG docker <your_user>
+```
+
 - **Only run this step if you have an NVIDIA gpu**
     - `./nvidia-setup.sh`
     - If the NVIDIA gpu is your primary display output (in case of a desktop etc.) run the following command
