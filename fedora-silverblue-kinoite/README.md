@@ -27,3 +27,16 @@ Press any key to continue....
 ```
 
 If you encounter issues with the regular upgrade script try using the `./upgrade-alternate.sh` script.
+
+# EXTRA NOTES
+If you are trying to get PGP Mailing working with Thunderbird follow the steps mentioned below (**only concerning the PGP mailing with smartcards**): 
+
+- Create a Fedora toolbox `distrobox-create --name fedora --image fedora:37`
+
+- Enter the distrobox with `distrobox enter fedora` 
+
+- Install the following packages `sudo dnf install gpgme pcsc-lite gpg thunderbird`
+
+- Export the application to your Silverblue system `distrobox-export --app thunderbird`
+
+- Follow the mentioned [page](https://anweshadas.in/how-to-use-yubikey-or-any-gpg-smartcard-in-thunderbird-78/#:~:text=Configure%20the%20secret%20key%20usage%20form%20Yubikey&text=Type%20your%20Secret%20Key%20ID,your%20hardware%20token%20in%20Thunderbird.) to set Thunderbird up to work with your smartcard.
