@@ -22,4 +22,4 @@ Flathub allows for installation of software not found in the regular DNF reposit
 |release/fedora-35|35|
 |release/fedora-36|36|
 |master|37|
-|master|Fedora Silverblue/Kinoite please open the fedora-silverblue-kinoite folder to read the instructions|
+|X|Fedora Silverblue - Moved to https://github.com/john-ghatas/silverblue-setup|
